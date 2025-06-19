@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Freebitco Enhancer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Enhancer Control</h2>
+  <label class="switch">
+    <input type="checkbox" id="toggle-script">
+    <span class="slider round"></span>
+  </label>
+  <p>Status: <span id="status-text">OFF</span></p>
+
+  <h3>Mini Balance</h3>
+  <div id="balance-display">-</div>
+
+  <h3>Log</h3>
+  <ul id="log-list"></ul>
+
+  <hr>
+  <button id="export-log">⬇ Export CSV</button>
+  <button id="backup-log">💾 Backup</button>
+  <button id="restore-log">🔁 Restore</button>
+  <input type="file" id="restore-input" style="display: none;" accept=".json" />
+
+  <h3>Statistik Hari Ini</h3>
+  <p id="stats">Loading...</p>
+
+  <h3>Otomatisasi</h3>
+  <label><input type="checkbox" id="auto-roll-time"> Auto ROLL sesuai jam</label><br>
+  <label><input type="checkbox" id="auto-refresh"> Auto Refresh halaman</label><br>
+  <label><input type="checkbox" id="auto-withdraw"> Simulasi Auto Withdraw (10,000+ sat)</label>
+
+  <script src="popup.js"></script>
+</body>
+</html>
